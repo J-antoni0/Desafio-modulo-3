@@ -17,26 +17,25 @@
     --cor-padrao-text: white;
     --cor-mais-fraca: rgba(255, 255, 255, 0.795);
     --cor-padrão-fundo-branco: white;
-    
+    --cor-padrão-textos-pretos: black;
+    --cor-padrão-textos-branos: white;
+    --cor-divs-em-imagns: rgba(0, 0, 0, 0.438);
 }
 
 html , body {   
-
     width: 100%;
     height: 100%;
-
 }
 
 html > body {
-
     overflow: auto;
     background-color: black;
 }
 
+
 body > header {
     display: flex;
-    min-height: 200px;
-    max-height: 300px;
+    height: 250px;
     width: 100%;
     background-color: var(--cor-f-header);
     justify-content: center;
@@ -46,23 +45,19 @@ body > header {
 
 header > h1 {
 
-    font-size: 8vh;
+    font-size: 6rem;
     font-family: "Passion One", sans-serif;
     font-weight: 400;
-    font-style: normal;
-    margin: 0.5rem 0;
 }
 
 header > p {
 
     color: var(--cor-padrao-text);
-
 }
 
 header > p > span.cor-mais-fraca {
 
     color: var(--cor-mais-fraca);
-
 }
 
 header > p > a {
@@ -78,25 +73,67 @@ header > p > a:hover {
     border-radius: 5px;
 }
 
-body > main > section.seção-textos {
-
-    height: 500px;
-    width: 100%;
-    background-color: var(--cor-padrão-fundo-branco);
-    padding-left: 20px;
-}
-
-main > section.seção-textos {
+body > main > section.sessão-textos {
 
     display: flex;
     justify-content: left;
     align-items: center;
+    height: 500px;
+    width: 100%;
+    background-color: var(--cor-padrão-fundo-branco);
+    box-sizing: border-box;
 }
 
-main > section > div > p.config-textos {
+main > div.config-padrões-div {
 
-    color: black;
+    margin-left: 20px;
+    padding: 5px;
+
+}
+
+main > section > div > p.config-textos-pretos {
+
+    color: var(--cor-padrão-textos-pretos);
     font-size: 1.5em;
-    font-weight: bold;
+    font-weight: normal;
+    line-height: 50px;
+    padding-left: 20px;
+}
+
+body > main > section.sessão-imagens{
+
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+    box-sizing: border-box;
+
+}
+
+body > main > section > figure.imagens {
+
+    background-image: url(../arq-desafio/imagens/background001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+main > section > div.config-padrões-div-em-imagens {
+
+    position: absolute;
+    background-color: var(--cor-divs-em-imagns);
+    margin-left: 20px;
+    padding: 5px;
+}
+
+main > section > div > p.config-textos-brancos {
+
+    color: var(--cor-padrão-textos-branos);
+    font-size: 1.5em;
+    font-weight: normal;
     line-height: 50px;
 }
