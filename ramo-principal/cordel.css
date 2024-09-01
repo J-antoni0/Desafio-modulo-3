@@ -18,7 +18,7 @@
     --cor-mais-fraca: rgba(255, 255, 255, 0.795);
     --cor-padrão-fundo-branco: white;
     --cor-padrão-textos-pretos: black;
-    --cor-padrão-textos-branos: white;
+    --cor-padrão-textos-brancos: white;
     --cor-divs-em-imagns: rgba(0, 0, 0, 0.438);
 }
 
@@ -112,14 +112,19 @@ body > main > section.sessão-imagens{
 
 body > main > section > figure.imagens {
 
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+main > section > figure#primeira-imagem {
+
     background-image: url(../arq-desafio/imagens/background001.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: fixed;
-    width: 100%;
-    height: 100%;
-    box-sizing: border-box;
+
 }
 
 main > section > div.config-padrões-div-em-imagens {
@@ -132,8 +137,41 @@ main > section > div.config-padrões-div-em-imagens {
 
 main > section > div > p.config-textos-brancos {
 
-    color: var(--cor-padrão-textos-branos);
+    color: var(--cor-padrão-textos-brancos);
     font-size: 1.5em;
     font-weight: normal;
     line-height: 50px;
+}
+
+body > main > section.sessão-com-mais-textos {
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 750px;
+    width: 100%;
+    background-color: var(--cor-padrão-fundo-branco);
+
+}
+
+main > section > div#config-div-primaria {
+
+    margin-bottom: 20px;
+
+}
+
+main > section > div#config-div-segundaria {
+
+    margin-top: 20px;
+
+}
+
+main > section > figure#segunda-imagem {
+
+    background-image: url(../arq-desafio/imagens/background002.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+
 }
