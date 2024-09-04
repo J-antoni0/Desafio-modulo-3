@@ -148,7 +148,7 @@ body > main > section.sessão-com-mais-textos {
     display: flex;
     justify-content: center;
     flex-direction: column;
-    height: 750px;
+    height: 900px;
     width: 100%;
     background-color: var(--cor-padrão-fundo-branco);
 
@@ -174,4 +174,22 @@ main > section > figure#segunda-imagem {
     background-position: center center;
     background-attachment: fixed;
 
+}
+
+footer {
+
+    text-align: center;
+}
+
+footer > p > span.cor-mais-fraca {
+
+    color: var(--cor-mais-fraca)
+
+}
+
+footer > p > span.efeito-footer:hover {
+
+    color: var(--cor-padrao-text);
+    cursor: pointer;
+    transition-duration: 2s;
 }
